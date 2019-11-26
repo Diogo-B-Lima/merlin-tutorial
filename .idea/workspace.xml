@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0cb42c99-0218-4120-9572-7431c40d05bf" name="Default Changelist" comment="" />
+    <list default="true" id="0cb42c99-0218-4120-9572-7431c40d05bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/automatic_workflow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/biomass.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/biomass_manually.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/clean_ws.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/clone_ws.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/compartments.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/compartments_integration.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/delete_ws.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/download_ncbi.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ebi_blast.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/enzymes_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/export_genome_files.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/import_genome_file.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/init.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/integrate.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/load_kegg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sampler.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/transyt.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorialMainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutorialMainPage.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1U7OcG07RzvmjWIF6pP5YDryeAo" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -45,10 +80,25 @@
       <option name="presentableId" value="Default" />
       <updated>1574704244721</updated>
       <workItem from="1574704248716" duration="1601000" />
+      <workItem from="1574714034224" duration="5399000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
   </component>
 </project>
