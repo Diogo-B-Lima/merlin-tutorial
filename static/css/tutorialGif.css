@@ -1,0 +1,8 @@
+.tutorialGif {
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: 0.3s;
+    width: 100%;
+    max-width: 60%;
+    ;
+}

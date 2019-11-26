@@ -1,0 +1,7 @@
+/* The sticky class is added to the header with JS when it reaches its scroll position. Editor might show this class as unused, DO NOT DELETE IT!*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
