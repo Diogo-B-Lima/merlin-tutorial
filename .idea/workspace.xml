@@ -2,6 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb42c99-0218-4120-9572-7431c40d05bf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/MerlinMainWindow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bioISO.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/correct_reversibility.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/db_settings.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/drains.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/export_model.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/find_blocked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/find_gene.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/find_unbalanced.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/genes_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gprs.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/import_model.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/install_plugins.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/load_ws.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/metabolites_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/pathways_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/protein_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/reactions_board.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/update_plugins.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorialMainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutorialMainPage.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574704244721</updated>
       <workItem from="1574704248716" duration="1601000" />
-      <workItem from="1574714034224" duration="5996000" />
+      <workItem from="1574714034224" duration="14765000" />
     </task>
     <servers />
   </component>
