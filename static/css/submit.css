@@ -1,0 +1,121 @@
+
+.search_bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: 'Oxygen';
+  max-width: 450px;
+}
+
+.search_bar form {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 0;
+}
+
+.search_bar form .inner-form {
+  background: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  box-shadow: 20px 8px 20px 8px rgba(0, 0, 0, 0.15);
+}
+
+.search_bar form .inner-form .input-field {
+  height: 60px;
+}
+
+.search_bar form .inner-form .input-field input {
+  height: 100%;
+  background: transparent;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.search_bar form .inner-form .input-field input[type=file] {
+  display: none;
+}
+
+.search_bar form .inner-form .input-field input[type=submit] {
+  display: none;
+}
+
+.search_bar form .inner-form .input-field input.placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_bar form .inner-form .input-field input:-moz-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_bar form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.search_bar form .inner-form .input-field input:hover, .search_bar form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+  border-color: #fff;
+}
+
+
+.search_bar form .inner-form .input-field.first-wrap {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+
+.search_bar form .inner-form .input-field.second-wrap {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.search_bar form .inner-form .input-field.second-wrap.custom-file-upload {
+  padding: 18px;
+  color: gray;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.search_bar form .inner-form .input-field.third-wrap {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.search_bar form .inner-form .input-field.third-wrap.custom-file-upload {
+  padding: 18px;
+  color: gray;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.search_bar form .inner-form .input-field.fourth-wrap {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.search_bar form .inner-form .input-field.fourth-wrap.custom-file-upload {
+  padding: 14px;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
