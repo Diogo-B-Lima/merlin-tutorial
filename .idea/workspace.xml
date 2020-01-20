@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cb42c99-0218-4120-9572-7431c40d05bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorialMainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutorialMainPage.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,13 +21,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1U7OcG07RzvmjWIF6pP5YDryeAo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -36,15 +42,15 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -60,6 +66,7 @@
       <updated>1574704244721</updated>
       <workItem from="1574704248716" duration="1601000" />
       <workItem from="1574714034224" duration="5996000" />
+      <workItem from="1579519200745" duration="9239000" />
     </task>
     <servers />
   </component>
@@ -71,7 +78,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -79,5 +88,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1514" y="57" key="SettingsEditor" timestamp="1579519398457">
+      <screen x="-2560" y="0" width="2048" height="824" />
+    </state>
+    <state x="-1514" y="57" key="SettingsEditor/0.0.1536.824/-2560.0.2048.824@-2560.0.2048.824" timestamp="1579519398457" />
+    <state x="-1879" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1579519558097">
+      <screen x="-2560" y="0" width="2048" height="824" />
+    </state>
+    <state x="-1879" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824/-2560.0.2048.824@-2560.0.2048.824" timestamp="1579519558097" />
   </component>
 </project>

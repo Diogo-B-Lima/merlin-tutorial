@@ -255,7 +255,7 @@
                 <a href="https://www.ceb.uminho.pt/People/Profile/josebastos">José Bastos</a>,
                 <a href="https://www.ceb.uminho.pt/People/Profile/miguelsilva">Miguel Silva</a>,
                 <a href="https://www.ceb.uminho.pt/People/Profile/odias">Oscar Dias</a>
-                | Oct 20, 2019 | <a href="https://www.ceb.uminho.pt/">CEB Uminho</a>
+                | Jan 20, 2019 | <a href="https://www.ceb.uminho.pt/">CEB Uminho</a>
             </p>
         </div>
 
@@ -337,7 +337,12 @@
 
                 <a name="selectDatabase"></a>
                 <h3>Database settings</h3>
-            If the user wants to use the default database settings of <i>merlin</i>, the following instructions can be skipped. Otherwise, to select the database type, the user must open the section “settings” in the menu and then select “database”. Here, the database type is the first option, where the option “H2” corresponds to a local database and is already selected by default. Alternatively, <i>merlin</i> also supports local or remote <i>MySQL</i> databases. The following fields are: username, password, host, and port. When all parameters are set, <i>merlin</i> should be able to successfully establish a connection with the database server of the user.
+
+                If the user wants to use merlin’s default database settings, the following instructions can be skipped.
+                Otherwise, to select the database type, the user must open the section “settings” in the menu and then select “database”.
+                Here, the database type is the first option, where the option H2 is the local database and is selected by default.
+                Alternatively, merlin also supports connections to local or remote MySQL databases when the following fields are set: username, password, host, and port.
+                When all parameters are set, merlin should be able to successfully establish a connection with the user’s database server.
 
                 <br>
                 <br>
@@ -355,12 +360,15 @@
                 <a name="create"></a>
                 <h3>Create a workspace</h3>
 
-                    To create a new workspace, one has to access the “workspace” section and choose the “open” option.
-                    If a given user is creating a workspace for the first time, the interface will not provide a list of available workspaces, instead it will prompt users to automatically create a workspace.
-                    To create a workspace at any given time, one must choose the “create” option and enter the new workspace name (duplicate names are not possible and will prompt a warning).
-            After creating a workspace it is mandatory to enter the <i>NCBI Taxonomy Identifier</i> of the organism in study.
-            It is possible to automatically download all <i>NCBI</i> files associated with a given assembly record, as selected by the user, by choosing the “search” option.
-            The final step towards creating a new workspace consists in entering the user email. This information will be stored only in the local machine of the user, and it is mandatory to access the <i>APIs</i> of certain frameworks, such as <i>UniProt</i> and <i>BLAST</i>.
+                    To create a new workspace, access the “workspace” section and select the “open” option.
+                    When a  workspace is being created for the first time, merlin will prompt users to automatically create a workspace.
+                    To create a workspace at any given time, select the “create” option and enter the new workspace name (duplicate names are not possible and a warning will be prompted).
+
+                    After creating a workspace it is mandatory to enter the NCBI Taxonomy Identifier of the organism in study.
+                    When available, all NCBI files associated with a given assembly record may be automatically download , by selecting the “search” option.
+                    The final step towards creating a new workspace consists in entering the user email.
+                    This information will be stored in the user’s local machine, as it is mandatory to remotely access certain tools, such as UniProt or BLAST.
+
                     <br>
                     <br>
                     <img class="tutorialGif" src="static/images/create_ws.gif" alt="Create a workspace" id="myImg" onclick="modalImage('myImg', 'myModal', 'img01', 'caption', 'close')">
@@ -373,7 +381,9 @@
                 <a name="load"></a>
                 <h3>Load a workspace </h3>
 
-                    After creating a workspace, the loading process is identical. One must access the “workspace” section and choose the “open” option. Afterwards it is only necessary to choose the desired workspace from a list of available options. The taxonomy identifier and personal email will be already filled.
+                    To load an existing workspace into merlin access the “workspace” section and select “open”.
+                    Then, select the desired workspace from a list of available options.
+                    The taxonomy identifier and personal email are automatically reloaded.
 
                     <br>
                     <br>
@@ -388,8 +398,12 @@
 
                 <a name="import"></a>
                 <h3>Import a workspace </h3>
+                    merlin allows importing existing workspaces, regardless of origin.
+                    To import a workspace  access the “workspace” section and hover over the “import” option, and select the “workspace” option.
+                    A new panel in which users can browse the local drive to select the merlin workspace backup (“.mer”), will emerge.
+                    Additionally, it is possible to redefine a new name for the imported workspace.
+                    If the user decides not to provide a new name, the imported workspace will inherit its original name, unless a workspace with the same name is already present in which case a warning will be shown.
 
-            <i>merlin</i> provides an option to import pre-existing workspaces, regardless of origin. To import a workspace one must access the “workspace” section and hover over the “import” option, followed by choosing the “workspace” option. A new panel will pop up where users can browse their local machine to select the “.mer” <i>merlin</i> workspace backup. It is possible to redefine a new name for the imported workspace. If the user decides to not provide a new name, the imported workspace will inherit its original name.
                     <br>
                     <br>
                     <img class="tutorialGif" src="static/images/import_ws.gif" alt="Import a workspace" id="myImg2" onclick="modalImage('myImg2', 'myModal2', 'img02', 'caption2', 'close2')">
@@ -402,7 +416,12 @@
                 <a name="export"></a>
                 <h3>Export a workspace </h3>
 
-            <i>merlin</i> provides an option to export a backup of a given workspace, which can be used for personal storage or sharing with other users. To export a workspace one must access the “workspace” section, hover over the “export” option and choose “workspace”. A new panel will pop up where users can choose which workspace to export, and where to export it in the local machine. Workspaces are exported in “.mer” format and are automatically named based on the workspace name and time/date of export.
+                    merlin provides an option to export a backup of a given workspace, which can be used for personal backup or sharing with other users.
+                    To export a workspace  access the “workspace” section, hover over the “export” option and select “workspace”.
+                    A new panel in which users can select the workspace to export, and where to in the local drive, will emerge.
+                    Workspaces are exported in the “.mer” format and are automatically labeled based on the workspace name and time/date of export.
+
+
                     <br>
                     <br>
                     <img class="tutorialGif" src="static/images/export_ws.gif" alt="Export a workspace" id="myImg3" onclick="modalImage('myImg3', 'myModal3', 'img03', 'caption3', 'close3')">
@@ -415,7 +434,20 @@
                 <a name = "clean"></a>
                 <h3>Clean a workspace </h3>
 
-            “Cleaning” a workspace consists in deleting specific parts of the database associated with the workspace, as user-defined. To clean a workspace one must access the “workspace” section and choose the “clean” option. A panel will pop up asking users to choose the target workspace. Additionally, users can choose to clean the whole database of the workspace, model data only, or annotation-data only (including the different annotation stages). Moreover, it is possible to choose to maintain/delete gene sequences and associated data, as well as automatically reloading <i>KEGG’s</i> metabolic data (to the selected workspace after cleaning).
+                    “Cleaning” a workspace consists in deleting specific parts of the database associated with the workspace.
+                    To clean a workspace  access the “workspace” section and select the “clean” option.
+                    A panel will emerge asking users to select the target workspace.
+                    Additionally, users can select which section should be wiped, namely:
+
+                    <ul style="background:none">
+                        <li>whole database of the workspace;</li>
+                        <li>model data only;</li>
+                        <li>enzymes annotation;</li>
+                        <li>compartments annotation.</li>
+                    </ul>
+
+                    Moreover, advanced  options are available, such as to maintain/delete gene sequences and associated data, automatically reloading KEGG’s metabolic data, etc.
+
                     <br>
                     <br>
                     <img class="tutorialGif" src="static/images/clean_ws.gif" alt="Clean a workspace" id="myImg4"
@@ -430,7 +462,9 @@
                 <a name="delete"></a>
                 <h3>Delete a workspace </h3>
 
-                    Deleting a workspace is an irrevocable operation which will also delete the associated database. To delete a workspace one must access the “workspace” section and choose the “delete” option. A panel will pop up asking for the target workspace to delete.
+                    Deleting a workspace is a permanent operation which will delete the associated database.
+                    To delete a workspace  access the “workspace” section and select the “delete” option.
+                    A panel will emerge asking for the target workspace to delete.
 
                     <br>
                     <br>
@@ -445,7 +479,11 @@
                 <a name="clone"></a>
                 <h3>Clone a workspace </h3>
 
-            <i>merlin</i> easily allows users to make a copy of available workspaces efficiently without requiring additional export and import operations. To clone a workspace one must access the “workspace” section and click the “clone workspace” section. A new panel will pop up asking users to select the workspace to clone and the name of the generated copy.  If a user enters a name for a copy which matches an already existing workspace, the operation will not continue. If the user does intend to replace an existing workspace with a copy of another workspace, this restriction can be bypassed by choosing the “force database creation” option.
+                    merlin easily allows users to make a copy of available workspaces efficiently without requiring additional export and import operations.
+                    To clone a workspace  access the “workspace” section and click the “clone workspace” section.
+                    A new panel will emerge asking users to select the workspace to clone and the name of the generated copy.
+                    If a user enters a name for a copy which matches an already existing workspace, the operation will not continue.
+                    If the user does intend to replace an existing workspace with a copy of another workspace, this restriction can be bypassed by selecting the “force database creation” option.
 
                     <br>
                     <br>
@@ -460,17 +498,34 @@
                 <a name="compatibility"></a>
                 <h3>Compatibility (import workspace from merlin v3 to merlin v4) </h3>
 
-            To import a workspace from <i>merlin</i> 3 to <i>merlin</i> 4, the user must open the operation located at “workspace” -> “compatibility” -> “import workspace from <i>merlin</i> 3”. A window should open where the user must indicate the name of the workspace to be generated in <i>merlin</i> 4. Note that this name should not already exist in the database, otherwise merlin will throw an error claiming that such workspace already exists. If wanted, the user can force <i>merlin</i> to override this database by selecting the option to “force database creation”. The second field is the name of the workspace to be imported from <i>merlin</i> 3. The last field is to indicate the path to <i>merlin</i> 3 home folder.
+                    To import a workspace from merlin 3 to merlin 4, the user must open the operation located at “workspace” -> “compatibility” -> “import workspace from merlin 3”.
+                    A window should open where the user must indicate the name of the workspace to be generated in merlin 4.
+                    Note that this name should not already exist in the database, otherwise merlin will showan error.
+                    However, the user can force merlin to override this database by selecting the option to “force database creation”.
+                    The second field is the name of the workspace to be imported from merlin 3.
+                    The last field is to indicate the path to merlin 3 home folder.
+
 
             <a name="genomeFiles"></a>
             <h1>Genome files </h1>
 
-            Before starting the genome annotation stage it is necessary to provide the genome data to <i>merlin</i>. The genome of the organism in study is a core basis for all the necessary steps towards reconstructing the associated metabolic model. Genome data may be integrated in <i>merlin</i> with local files or by accessing <i>NCBI</i> remotely. Additionally, it is also possible to automate genome files retrieval upon creating a new workspace. After entering the <i>NCBI Taxonomy Identifier</i> of the organism in study, and clicking the “search” option, it is possible to download the genome data from <i>GenBank</i> or <i>RefSeq</i> (and automatically integrate it in <i>merlin</i>)
+                Before starting the genome annotation stage it is necessary to provide the genome data to merlin.
+                The genome of the organism in study is the cornerstone for most steps required for the reconstruction of the metabolic model.
+                Genome data may be uploaded into merlin with files or by accessing NCBI remotely.
+                Additionally, it is also possible to automate the retrieval of genome files upon creating a new workspace.
+                After entering the NCBI Taxonomy Identifier of the organism in study, and clicking the “search” option, it is possible to download the genome data from GenBank or RefSeq (and automatically upload it into merlin).
+
 
             <a name="importGenome"></a>
             <h3>Import genome files </h3>
 
-            As aforementioned, it is possible to load genome data to <i>merlin</i> using local files. To perform this operation, one must access the “workspace” section, hover over the “import” option and choose the “genome” option. A new panel will pop up with additional settings. The “search locus tags” option, if activated, triggers an operation to associate each given gene (in the genome files) to a locus tag (if successfully found). merlin is compatible with multiple genome file formats, such as “.faa”, “.fna” and “.gbff”. Upon choosing the genome file to be imported, the final step consists in choosing the desired workspace for the data to be loaded into.
+                Besides importing automatically from NCBI, merlin allows loading local genome files.
+                To perform this operation, the “workspace” section should be accessed, then hovering over the “import” option and selecting the “genome” option.
+                A new panel will emerge with additional settings.
+                The “search locus tags” option, if activated, triggers an operation to associate each given gene (in the genome files) to a locus tag (when available).
+                merlin is compatible with multiple genome file formats, such as “.faa”, “.fna” and “.gbff”.
+                Upon selecting the genome file to be imported, the final step consists in selecting the desired workspace for the data to be loaded into.
+
 
                 <br>
                 <br>
@@ -485,7 +540,8 @@
             <a name="download"></a>
             <h3>Download NCBI genome files </h3>
 
-            If a user did not automatically download the genome files from <i>NCBI</i> during the creation of a new workspace it is possible to do so at any other moment. To perform this operation, one must access the “workspace” section and choose the “download <i>NCBI</i> files” option. If necessary, one might choose the “search” option to filter a specific assembly record from <i>GenBank</i> or <i>RefSeq</i>.
+                Even if the genome files were not downloaded from NCBI during the creation of a new workspace, users may perform this operation separately by accessing the “workspace” section and selecting the “download NCBI files” option.
+                If necessary, the “search” can be used to find a specific assembly record from GenBank or RefSeq.
 
                 <br>
                 <br>
@@ -499,7 +555,9 @@
 
             <a name="exportGenome"></a>
             <h3>Export genome files </h3>
-                It is possible to export manually or automatically loaded genome files by accessing the “workspace” section, hovering over the “export” option, and choosing the “genome files” option. A new panel will pop up asking the user to choose the genome file to be exported and the output directory.
+
+                The genome data available in merlin may be exported by accessing the “workspace” section, hovering over the “export” option, and selecting the “genome files” option.
+                A new panel will emerge allowing to  select the genome file to be exported and the output directory.
 
                 <br>
                 <br>
@@ -514,15 +572,13 @@
             <a name="metabolicData"></a>
             <h1>Metabolic data </h1>
 
-            Obtaining metabolic information is mandatory for a <i>GSM</i> (genome-scale metabolic) model
-            reconstruction. Therefore, <i>merlin</i> contains a simple operation which retrieves information from
-            biological databases. Moreover, this operation will load the metabolic information including compounds,
-            enzymes, reactions and pathways into <i>merlin’s</i> internal database. Currently, <i>merlin</i> only
-            supports metabolic data retrieval from <i>KEGG</i>. However, in the near future, tools to retrieve data
-            from <i>BIGG</i> and <i>ModelSEED</i> databases will be available (see <a
-                href="https://merlin-sysbio.org/" target="_blank">ongoing work</a> for further information).
-            Finally, this
-            operation integrates all the retrieved spontaneous reactions into the model, assembling an initial primitive metabolic network, which will be complemented upon integrating the enzymatic and transporters annotation.
+                Obtaining metabolic information is mandatory for a GSM model reconstruction.
+                Therefore, merlin contains a simple operation which retrieves this information from KEGG.
+                This operation will load the metabolic information including compounds, enzymes, reactions and pathways into merlin’s internal database.
+                Currently, merlin only supports KEGG.
+                However, in the near future, tools to retrieve data from BiGG and ModelSEED databases will be available
+                (see <a href="https://merlin-sysbio.org/" target="_blank">ongoing work</a> for further information).
+                This operation automatically integrates all retrieved spontaneous reactions into the model, which will be complemented upon integrating the enzymatic and transporters annotation.
 
                 <br>
                 <br>
@@ -537,36 +593,47 @@
             <a name="gfa"></a>
             <h1>Genome functional annotation </h1>
 
-            <i>merlin</i> allows you to perform the genome functional annotation of the organism of interest. This coincides with the first step towards the reconstruction of your <i>GSM</i> model. There are several options for performing the genome functional annotation with <i>merlin</i> involving homology or domain searches to the genome sequence of the organism of interest. Alternatively, one can also load external genome functional annotations.
-            In the genome functional, we are going to assign metabolic functions, namely the gene products and enzyme commission (<i>EC</i>) numbers, to each coding sequence (<i>CDS</i>) in the genome.
+                One of the most relevant and differentiating features in merlin is that it allows to perform the genome functional annotation of the organism of interest.
+                This coincides with the first step towards the reconstruction of your GSM model.
+                There are several options for performing the genome functional annotation with merlin involving homology or domain searches to the genome sequence of the organism of interest.
+                Nevertheless, external genome functional annotations might be uploaded into merlin
+                (see <a href="tutorialMainPage.html#loadGFA">Load genome functional annotation</a> section).
+
+                The purpose of the enzymes annotation, is to assign metabolic functions, namely the gene products and enzyme commission (EC) numbers, to all coding sequence (CDS) encoding enzymes in the genome.
 
 
             <a name="homology"></a>
             <h3>Homology search</h3>
 
-            In <i>merlin</i>, the enzymes functional annotation procedure is leveraged by semi-automatic similarity searches to remote databases, such as <i>UniProtKB</i> or <i>UniProtKB/SwissProt</i>, to find homologous protein sequences.
-            The rationale for annotating a given gene or protein based on the similarity of its sequence with other gene or protein sequences relies on the fact that these may have arisen from a common ancestral lineage.
-            To perform a homology search in <i>merlin</i>, you must have imported the genome files (see <a href="tutorialMainPage.html#genomeFiles">Genome Files</a> section).
+                	In merlin, the enzymes functional annotation procedure is supported by semi-automatic similarity searches to remote databases, such as UniProtKB or UniProtKB/SwissProt, to find homologous protein sequences.
+
+                    Performing an homology search in merlin requires having imported the genome files
+                    (see <a href="tutorialMainPage.html#genomeFiles">Genome Files</a> section).
 
            <h4><i>BLAST</i></h4>
-            The Basic Local Alignment Search Tool (<i>BLAST</i>) is the preferred similarity search tool for performing the enzymes functional annotation in <i>merlin</i>. One can easily use the remote web-service from <i>EBI</i> using the default parameters.
-Otherwise, you can select the most adequate databases, parameters and thresholds. To do so, you should take a look on your own to the meanings of “expected value” (e-value). Hint: the lower the e-value the highest the similarity score between two sequences.
-            Also, you should inspect the available databases:
-            <br>
-            <br>
-            <ul style="background:none">
-                <li><b><i>UniProtKB</i> -</b> reviewed and unreviewed annotation records from <i>UniProtKB</i> and <i>SwissProt</i></li>
-                <li><b><i>UniProtKB/SwissProt</i> -</b> reviewed annotation records from <i>SwissProt</i></li>
-                <li><b><i>UniProtKB/TrEMBL</i> -</b> unreviewed annotation records from <i>UniProtKB</i> </li>
-            </ul>
-            <br>
-            Additionally, <i>merlin</i> supports other <i>UniProtKB</i>-based databases.
-            <i>merlin</i> allows you to select the type of the <i>BLAST</i> tool: <i>BLASTp</i> or <i>BLASTx</i>; as well as the sequence type that you are working with. You have the freedom to limit the number of <i>BLAST</i> results to 100 or more. Finally, the substitution matrix can be selected automatically by <i>merlin</i> or defined by you.
 
-            <i>merlin</i> will perform genome-wide sequence alignments automatically and display the results later
-            into a simplified layout called enzymes board (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
-            This
-            process may take several hours depending on the web-server availability, internet connection and genome size.
+                The Basic Local Alignment Search Tool (BLAST) is the preferred similarity search tool for performing the enzymes functional annotation in merlin, which uses the remote web-service from EBI.
+
+                merlin allows changing all parameters such as:
+
+                <ul style="background: none">
+
+                    <li><b>expected value (e-value):</b> Hint: the lower the e-value, the higher the similarity score between two sequences;</li>
+                    <li><b>BLAST database: </b>
+                        <li style="margin-left:5%">UniProtKB - reviewed and unreviewed annotation records from UniProtKB and SwissProt;</li>
+                        <li style="margin-left:5%">UniProtKB/SwissProt - reviewed records from SwissProt;</li>
+                        <li style="margin-left:5%">UniProtKB/TrEMBL - unreviewed annotation records from UniProtKB;</li>
+                        <li style="margin-left:5%">Additionally, merlin supports other UniProtKB-based databases</li>
+                    </li>
+                    <li>the type of the BLAST tool</li>
+                    <li>the number of BLAST results</li>
+                    <li>selecting the substitution matrix manually or automatically</li>
+
+                </ul>
+
+            merlin will perform genome-wide sequence alignments automatically and display the results in a compact layout, the <i>enzymes annotation board</i>
+            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            This process may take several hours depending on the web-server availability, internet connection and genome size.
 
             <br>
             <br>
@@ -580,108 +647,135 @@ Otherwise, you can select the most adequate databases, parameters and thresholds
 
            <h4>Load <i>BLAST</i> report</h4>
 
-            On the other hand, one can load <i>BLAST</i> reports obtained with the <i>NCBI</i> or <i>EBI</i> web/services. For that, you must provide the path in your computer for the output files returned by these tools and point out their extension, source and type.
-            <i>merlin</i> will parse the contents within each <i>BLAST</i> report and load the results into a
-            simplified layout called enzymes board (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            On the other hand, BLAST reports obtained with the NCBI or EBI web/services may be directly loaded into merlin.
+            This process involves providing the path in the computer for the returned output files , the source and type.
 
+            merlin will parse the contents within each BLAST report and load the results into a simplified layout called enzymes board
+            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
 
             <a name="domain"></a>
             <h3>Domain search</h3>
 
             <h4><i>InterProScan</i></h4>
 
-            The <i>InterProScan</i> functional annotation is not a mandatory step towards the reconstruction of your genome-scale metabolic model in <i>merlin</i>. In turn, this tool can provide additional information regarding each gene functional annotation.
-This tool will provide a functional analysis for each protein sequence by classifying them into families and predicting the presence of domains and important sites.
-            <i>InterProScan</i> is a time-consuming tool, thus the user must provide both lower and upper thresholds to limit the number of annotated records.
-            The results of your <i>InterProScan</i> functional annotation can be consulted by clicking the magnifying
-            glass (coloured with a purple background) of each gene entry in the enzymes board (see <a
-                href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            The InterProScan functional annotation is an optional step, which can provide additional information regarding each gene functional annotation.
+            This tool will provide a functional analysis for each protein sequence by classifying them into families and predicting the presence of domains and important sites.
+            InterProScan is a time-consuming tool, thus the user must provide both lower and upper thresholds to limit the number of annotated records.
+            The results of your InterProScan functional annotation can be checked by clicking the magnifying glass (coloured with a purple background) of each gene entry in the enzymes board
+            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
 
             <a name="loadGFA"></a>
             <h3>Load genome functional annotation</h3>
 
-            Although it is highly recommended that you perform your own genome functional annotation to assess with high confidence what are the metabolic capabilities present in the genome of the organism of interest, <i>merlin</i> allows you to skip this step. Instead, one can load external genome functional annotations from <i>KEGG</i> or standard format files, such as <i>GFF3</i> and <i>GenBank</i>.
+                Although it is highly recommended that you perform your own genome functional annotation to assess with high confidence the metabolic capabilities in the genome of the organism of interest, merlin allows you to skip this step.
+                Instead, one can load external genome functional annotations from KEGG or standard format files, such as GFF3 and GenBank.
 
 
             <h4><i>KEGG</i> annotation</h4>
 
-            To load a genome functional annotation from <i>KEGG</i>, the user must provide the organism identifier (also known as organism code) in <i>KEGG</i>. For example, "eco" for <i>Escherichia coli</i> K-12 MG1655.
-            <i>merlin</i> will load automatically the enzymes functional annotation available in <i>KEGG</i> for the selected organism and integrate it into the model dashboard together with the previously loaded metabolic data (see <a
-                href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+                The user must provide the organism identifier (also known as organism code) in KEGG, to load a genome functional annotation from KEGG.
+                For example, <i>eco</i> for <i>Escherichia coli</i> K-12 MG1655.
+                merlin will load automatically the enzymes functional annotation available in KEGG for the selected organism and integrate it into the model dashboard together with the previously loaded metabolic data
+                (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+
 
             <h4><i>GFF3</i></h4>
 
-            To load a genome functional annotation from an external <i>GFF3</i> file, the user must provide the path in your computer for the respective file and its source. Additionally, one must tick the <i>EC</i> option checkbox to allow the integration of metabolic capabilities encoded in the genome (identified by the <i>EC</i> numbers).
-            <i>merlin</i> will load the enzymes functional annotation available in the <i>GFF3</i> file and integrate it into the model dashboard together with the previously loaded metabolic data (see <a
-                href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+            The user must provide the file path and source, to load a genome functional annotation from an external GFF3 file.
+            Additionally, the EC option checkbox should be selected to allow the integration of metabolic capabilities encoded in the genome (identified by the EC numbers).
+            merlin will load the enzymes functional annotation available in the GFF3 file and integrate it into the model dashboard together with the previously loaded metabolic data
+            (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
 
 
             <h4><i>GenBank</i></h4>
 
-            The user can load the genome functional annotation available in the <i>GenBank</i> file downloaded before
-            in the <a
-                href="tutorialMainPage.html#genomeFiles">Genome files</a> section.
-            Alternatively, to load a genome functional annotation from an external <i>GenBank</i> file, the user must provide the path in your computer for the respective file.
-            <i>merlin</i> will load the enzymes functional annotation available in the <i>GenBank</i> file and integrate it into the model dashboard together with the previously loaded metabolic data (see <a
-                href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+            The user can load the genome functional annotation available in the GenBank file uploaded in the
+            <a href="tutorialMainPage.html#genomeFiles">Genome files</a> section.
+            Alternatively, to load a genome functional annotation from an external GenBank file, the user must provide the path for the respective file.
+            merlin will load the enzymes functional annotation available in the GenBank file and integrate it into the model dashboard together with the previously loaded metabolic data
+            (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
 
 
             <a name="pipelines"></a>
             <h3>Pipelines for performing genome functional annotation</h3>
 
-            <i>merlin</i> allows you to perform the genome functional annotation following two different pipelines.
-            Otherwise, you can perform the genome functional annotation in the enzymes board (see <a
-                href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section).
+            merlin allows to perform the genome functional annotation following through methodologies.
+            Nevertheless, the genome functional annotation can be manually performed in the enzymes board
+            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section).
 
 
             <h4>Enzymes annotation - Automatic workflow</h4>
 
-            This tool allows the user to iteratively replicate an annotation workflow. It consists of a <i>GUI</i> containing several slots containing 4 fields to collect parameters from the workflow. Such fields are:<br>
-       <ul style="background:none">
+                This tool allows the user to iteratively replicate a simple annotation workflow.
+                It consists of a GUI containing several slots (lines) with 4 fields (columns) to select parameters from the workflow.
+                Such fields are:
 
-           <li>Composed of a drop-down list where the user can select if the step
-selected will be relative to the species or the genus. If the empty option is selected,
-     the remaining fields become inactive and excluded from the pipeline.</li>
-           <li>Composed of a drop-down list containing all species or all genus
-               available in <i>merlin’s</i> internal database, depending on the option selected in the first
-field. Also the option “any” is available for both options, in order to accept any
-     species or any genus.</li>
-           <li>Relative to the <i>E-value</i> threshold. Here, the user can define the
-     maximum threshold above which all annotations must be disregarded.</li>
-           <li>Field is a Boolean option where the user can select between matches with
-               <i>UniProt</i> reviewed entries or not.</li>
-       </ul>
-           <br>
-In case that none of the conditions in each slot of the workflow is fulfilled, the user has
-available an extra Boolean field that allows the entries to accept the default annotation when
-no matches are found.
-The process of assessing the correct annotation, for each gene, starts by searching for the best match among the homologous genes found in the similarity search. With this purpose, an entry that meets the requirements of the first slot is sought among all available homologous genes. If no entries match the requirements, the process is repeated for the next slot, until the entire workflow is iterated. If no entries meet the requirements of any slot, the default annotation can be accepted or rejected, depending on the value of the Boolean
-option “Accept default annotation if no match is found”.<br><br>
-To each annotation, a confidence level is associated depending on which slot of the workflow
-the match was found. The confidence level is expressed in sequential order with alphabet letters. The default annotation also has a confidence level of “Default”. When the evaluation process is complete, merlin saves the annotation into its internal database and refreshes the Enzymes Annotation board main tab to reveal the results of the process. The confidence level of each annotation is shown in column “notes”.
+                <ul style="background:none">
+                    <li>a drop-down list in which the user can select between  the species or the genus.
+                        If the empty option is selected, the remaining fields become inactive and excluded from the pipeline.</li>
+                    <li>a drop-down list containing all species or all genus available in merlin’s internal database, depending on the option selected in the first field.
+                        Also the option “any” is available for both options, in order to accept any species or any genus.</li>
+                    <li>the e-value threshold. Here, the user can define the maximum threshold above which all annotations must be disregarded.</li>
+                    <li>field is a Boolean option in which the user can select between matches with UniProt reviewed entries or not.</li>
 
+                </ul>
+
+                In case that none of the conditions in each slot of the workflow is fulfilled, the user has available an extra Boolean field that allows the entries to accept the default annotation when no matches are found.
+                The process of assessing the correct annotation, for each gene, starts by searching for the best match among the homologous genes found in the similarity search.
+                With this purpose, an entry that meets the requirements of the first slot is sought among all available homologous genes.
+                If no entries match the requirements, the process is repeated for the next slot, until the entire workflow is iterated.
+                If no entries meet the requirements of any slot, the default annotation can be accepted or rejected, depending on the value of the Boolean option “Accept default annotation if no match is found”.
+                A confidence level is associated with each annotation depending on which slot of the workflow the match was found.
+                The confidence level is expressed in sequential alphabetical order.
+                The default annotation also has a confidence level of “Default”.
+                When the evaluation process is complete, merlin saves the annotation into its internal database and refreshes the Enzymes Annotation board to reveal the results of the process
+                (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+                The confidence level of each annotation is shown in the column “notes”.
+
+
+                <br>
+                <br>
+                <img class="tutorialGif" src="static/images/automatic_workflow.gif" alt="Automatic workflow"
+                     id="myImg12" onclick="modalImage('myImg12', 'myModal12', 'img12', 'caption12', 'close12')">
+                    <div id="myModal12" class="modal">
+                        <span class="close" id="close12">&times;</span>
+                            <img class="modal-content" id="img12">
+                                <div id="caption12" class="caption"></div>
+                    </div>
+
+            <h4>SamPler</h4>
+
+            SamPler is a semi-automatic method for the selection of parameters for the annotation of enzymes.
+            When merlin’s homology search is complete, a score is assigned to each EC number (and product name) by weighting the taxonomy score, frequency score through an α parameter.
+            However, the best value for the parameter α is case oriented and has to be determined manually or using SamPler.
+            To automatically determine the best value of α, the user should manually annotate a small sample of the genome (5% to 10%), allowing merlin to accept this sample as standard of truth.
             <br>
             <br>
-            <img class="tutorialGif" src="static/images/automatic_workflow.gif" alt="Automatic workflow"
-                 id="myImg12" onclick="modalImage('myImg12', 'myModal12', 'img12', 'caption12', 'close12')">
-                <div id="myModal12" class="modal">
-                    <span class="close" id="close12">&times;</span>
-                        <img class="modal-content" id="img12">
-                            <div id="caption12" class="caption"></div>
-                </div>
-
-            <h4><i>SamPler</i></h4>
-
-            <i>SamPler</i> is a semi-automatic method for annotation of enzymes. When <i>merlin’s</i> homology search is complete, a score is assigned to each <i>EC</i> number by weighting the taxonomy score, frequency score and a parameter α. However, the best value for the parameter α is not automatically discovered and has to be calculated manually or using <i>SamPler</i>.
-To determine the best value of α, the user has to manually annotate a small sample of
-            the genome (5% to 10%), allowing <i>merlin</i> to accept this sample as its standard of truth.<br><br>
-            <i>SamPler</i> is available as a plugin at “annotation/enzymes”. When this button is pressed, <i>merlin</i> will launch a warning saying that all previous enzymes annotation will be deleted. At this point, the only options are to cancel the execution or continue. Note also that this tool can only be executed if the <i>BLAST</i> already processed all entries. If the operation was continued, merlin will open a graphical interface containing the sample to annotate. If required, a new sample can be generated using a different size. By pressing the button “save”, the current state of the annotation is saved and it can be continued in a different session. Thus, next time that <i>SamPler</i> is executed, the work already performed is loaded to the graphical interface. During the annotation process, the tool provides a list of <i>EC</i> numbers that can be related to each gene. If the correct option is not available in the list, one should select the option “other ec number”. Likewise, if a gene is not metabolic, the empty option should be selected.<br><br>
-            When the annotation of the sample is complete, the button “find best parameters” should be pressed. Here, <i>SamPler</i> starts a wide set of calculations that allow determining the best value of α, upper threshold, and lower threshold. When all calculations are complete, a results graphical interface containing a table is launched. This table allows analyzing the
-results attained for each α, namely of the accuracy, upper and lower thresholds, the number of genes above the upper threshold, number of genes below the lower threshold, total of genes for manual curation, the percentage of genes for manual curation and the values the ratio. This window also allows to increase or decrease the values of the precision and negative predictive value.
-<br><br>
-            The algorithm automatically selects which are the best parameters using the ratio as reference, the higher the ratio, the better the parameters. It is also possible to choose a different option and select other parameters based on the analysis of the results. By pressing the button “apply", the selected parameters are applied to the main window.
-Then, at the Enzymes Annotation board main tab, all entries above the upper threshold are accepted as correctly annotated, and below the lower threshold all entries are rejected as non-metabolic genes. All genes between the upper and lower thresholds must then be manually curated.
-            <i>SamPler</i> is published and can be checked in detail <a style="padding: 0" href="https://doi.org/10.1186/s12859-019-3038-4">here</a>.
+            SamPler is available as a plugin at “annotation/enzymes” menu.
+            When this option is selected, merlin will launch a warning saying that all previous enzymes annotation will be deleted.
+            At this point, the only options are to cancel the execution or continue.
+            Note also that this tool can only be executed if BLAST already processed the whole genome.
+            If the operation is continued, merlin will open a window in which the sample to annotate is provided.
+            If required, a new sample can be generated using a different size.
+            By pressing the button “save”, the current state of the annotation is saved and it can be continued in a different session.
+            Thus, next time SamPler is executed, the same sample and manual annotations are loaded to the window.
+            During the annotation process, the tool provides a list of EC numbers that can be assigned to each gene.
+            If the correct option is not available in the list, the option “other ec number” should be selected.
+            Likewise, if a gene is not metabolic, the “empty” option should be selected.
+            When the annotation of the sample is complete, the button “find best parameters” should be pressed.
+            Here, SamPler starts a wide set of calculations that allow determining the best value of α, as well as an upper threshold and a lower threshold.
+            When all calculations are complete, a results  table is shown.
+            This table allows analyzing the results attained for each α, namely of the accuracy, upper and lower thresholds, the number of genes above the upper threshold, number of genes below the lower threshold, total of genes for manual curation, the percentage of genes for manual curation and the precision/curation ratio.
+            This window also allows to increase or decrease the values of the precision and negative predictive value.
+            <br>
+            <br>
+            The algorithm automatically selects the best parameters using the ratio as reference, the higher the ratio, the better the parameters.
+            Nevertheless, the user may select a different option with  different parameters based on the analysis of the results.
+            By pressing the button “apply", the selected parameters are used for the enzymes annotation.
+            Then, at the Enzymes Annotation board main tab, the scores are adjusted for the selected α parameter value, all entries above the upper threshold are accepted as correctly annotated, and below the lower threshold all entries are rejected as non-metabolic genes
+            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section).
+            All genes between the upper and lower thresholds must then be manually curated.
+            SamPler is published and more details are available at: <a style="padding: 0" href="https://doi.org/10.1186/s12859-019-3038-4">SamPler - a novel method for selecting parameters for gene functional annotation routines</a>
 
             <br>
             <br>
@@ -698,81 +792,121 @@ Then, at the Enzymes Annotation board main tab, all entries above the upper thre
             <a name="enzymesBoard"></a>
             <h3>Enzymes board</h3>
 
-            The enzymes board shows, to the user, data related to the organism’s genome functional annotation. Its main tab presents all genes, as well as the associated status, name, product, <i>EC</i> number, scores and notes for each one. The status of a gene is divided in two components, the ‘star’, which reflects the gene revision status (Gold - Reviewed; Silver- Unreviewed), and the ‘background’, which reflects if <i>merlin’s</i> annotation is in accordance with <i>UniProt</i> annotation (Green - Annotations in accordance; Light Green - Partial accordance, often happens with promiscuous enzymes; Red - Annotations not in accordance). Additionally, each gene is assigned with a product and <i>EC</i> number based on score calculated by a <i>merlin’s</i> internal algorithm that takes into account both hits frequency and source organism taxonomy. However, products and <i>EC</i> numbers can be manually changed by the user, using the dropdown boxes available in each column. The enzyme board also contains a ‘notes’ column that allows the user to write anything it pretends (Recommendation: the user should take note of any modification made to a gene, as backtracking changes in the model might be necessary). Additional information for each gene can be accessed using the magnifying glass, showing a panel with changeable tabs that can present all hits obtained in the <i>BLAST</i>, protein sequence, <i>BLAST</i> parameters or organism taxonomy. <br>
-            <br>
-            The search toolbar can be a valuable tool for the user, as it can search by gene name, by notes or in all columns. Setting the search toolbar with ‘all’ allows the user to search for <i>EC</i> numbers in all gene annotations, which can be useful in the later stages of the <i>GSM</i> model reconstruction. The main tab of the enzyme board can also be set to show only results from a selected database. Annotations shown in the board can be exported to an <i>XLSX</i> file or can be used to update the <i>GenBank</i> file of the organism’s genome. Finally, the two ‘buttons’ in the bottom right section of the board are used to save changes made in the board and to integrate the annotations to the model.
-    The board also displays a second tab that shows statistical information, such as the number of genes, number of genes without similarities, average number of homologues per gene, among others.
+                The enzymes board shows, to the user, data related to the organism’s genome functional annotation.
+                Its main tab presents all genes, as well as the associated status, name, product, EC number, scores and notes for each one.
+                The status of a gene is divided in two components:
 
-            <br>
-            <br>
-            <img class="tutorialGif" src="static/images/enzymes_board.gif" alt="Enzymes board"
-                 id="myImg14" onclick="modalImage('myImg14', 'myModal14', 'img14', 'caption14', 'close14')">
-                <div id="myModal14" class="modal">
-                    <span class="close" id="close14">&times;</span>
-                        <img class="modal-content" id="img14">
-                            <div id="caption14" class="caption"></div>
-                </div>
+                <ul style = "background: none">
+
+                    <li><b>star:</b> gene revision status:
+                        <li style="margin-left:5%">Gold - Reviewed</li>
+                        <li style="margin-left:5%">Silver - Unreviewed</li>
+                    </li>
+                    <li><b>background:</b> Match between merlin’s and UniProt's annotation:
+                        <li style="margin-left:5%">Green - Match</li>
+                        <li style="margin-left:5%">Light Green - Partial match (it often happens with promiscuous enzymes)</li>
+                        <li style="margin-left:5%">Red - Mismatch</li>
+                    </li>
+
+                </ul>
+
+                Additionally, each gene is assigned with a product and EC number based on score calculated by a merlin’s internal algorithm that takes into account both hits frequency and source organism taxonomy.
+                However, products and EC numbers can be manually changed by the user, using the dropdown boxes available in each column.
+                The enzyme board also contains a ‘notes’ column that allows the user to write notes for each gene (as a rule of thumb, the user should take note of any modification performed during the curation  of the gene annotation, as backtracking changes in the model might be necessary).
+                Additional information for each gene can be accessed using the magnifying glass, showing a panel with changeable tabs which show all hits obtained in the BLAST, protein sequence, BLAST parameters and organism taxonomy.
+                <br>
+                <br>
+                The search toolbar can be a valuable tool for the user, as it can search by gene name, by notes or in all columns.
+                Setting the search toolbar with ‘all’ allows the user to search for EC numbers in all gene annotations, which can be useful in the later stages of the GSM model reconstruction.
+                The main tab of the enzyme board can also be set to show only results from a selected database.
+                Annotations shown in the board can be exported to a Microsoft Excel file or used to update the genbank file of the organism’s genome.
+                Finally, the two ‘buttons’ in the bottom right section of the board are used to save changes made in the board and to integrate the annotations to the model.
+	            <br>
+                <br>
+                The board also displays a second tab that shows statistical information, such as the number of genes, number of genes without similarities, average number of homologues per gene, among others.
+
+
+                <br>
+                <br>
+                <img class="tutorialGif" src="static/images/enzymes_board.gif" alt="Enzymes board"
+                     id="myImg14" onclick="modalImage('myImg14', 'myModal14', 'img14', 'caption14', 'close14')">
+                    <div id="myModal14" class="modal">
+                        <span class="close" id="close14">&times;</span>
+                            <img class="modal-content" id="img14">
+                                <div id="caption14" class="caption"></div>
+                    </div>
 
             <a name="enzymesAnnotationIntegration"></a>
             <h3>Enzymes annotation integration</h3>
 
-            <i>merlin</i> easily allows you to integrate the enzymes functional annotation into a draft genome-scale metabolic network. The result of the integration between the loaded metabolic data and the loaded or carried out enzymes functional annotation will define the topology and connectivity of your genome-scale metabolic network.
-            The metabolic capabilities encoded in the genome previously identified with <i>EC</i> numbers will now be associated to reactions according to the mappings between enzymes (<i>EC</i> numbers) and reactions available in the metabolic data previously loaded into <i>merlin</i>.
-            The following example elucidates what is happening behind the scenes: A given gene has been annotated with the pyruvate formate-lyase <i>EC</i> number (2.3.1.54) in the enzymes annotation step; <i>KEGG</i> metabolic data has been loaded in merlin (see <a
-                href="tutorialMainPage.html#metabolicData">Metabolic data</a> section); When this annotation is
-            integrated into the model
-            dashboard, the following metabolic reactions "R00212" and "R06987" are automatically associated with the referred enzyme and assumed to be present in your genome-scale metabolic model according to the enzymes functional annotation. <i>merlin</i> will perform this operation for all metabolic capabilities (genes assigned with at least one <i>EC</i> number) annotated in the enzymes functional annotation step and according to the loaded metabolic data. <br>
-            <br>
-            In the Enzymes board, one can perform the integration of the enzymes functional annotation in the model dashboard using the Integrate to model button. This button will directly integrate the results of the enzymes annotation into the model dashboard and fill up the database tables assigned for this module.
+                merlin allows integrating the enzymes functional annotation into a draft genome-scale metabolic network very easily.
+                The result of the integration between the loaded metabolic data and the enzymes functional annotation will define the topology and connectivity of your genome-scale metabolic network.
+                The metabolic capabilities encoded in the genome previously identified with EC numbers will now be associated to reactions according to the mappings between enzymes (EC numbers) and reactions available in the metabolic data previously loaded into merlin.
+                The following example elucidates what is happening behind the scenes: A given gene has been annotated with the pyruvate formate-lyase EC number (2.3.1.54) in the enzymes annotation step;
+                KEGG metabolic data has been loaded in merlin
+                (see <a href="tutorialMainPage.html#metabolicData">Metabolic data</a> section);
+                When this annotation is integrated into the model dashboard, the following metabolic reactions R00212 and R06987 are automatically associated with the referred enzyme and assumed to be present in your genome-scale metabolic model according to the enzymes functional annotation.
+                merlin will perform this operation for all metabolic capabilities (genes assigned with at least one EC number) annotated in the enzymes functional annotation step and according to the loaded metabolic data.
+                More details at: <a style="padding: 0" href="https://doi.org/10.1093/nar/gkv294">Reconstructing genome-scale metabolic models with merlin</a>
+                <br>
+                In the Enzymes board, one can perform the integration of the enzymes functional annotation in the model dashboard using the Integrate to model button.
+                This button will directly integrate the results of the enzymes annotation into the model dashboard and fill up the database tables assigned for this module.
+                <br>
+                Note that every time the Integrate to model button is used the results of the previous integration are lost.
+                This operation saves the new results of the integration on top of the previous ones.
+                Thus, although this button can be used to update the previous integration results, all alterations performed in the model dashboard and database tables designed for this module will be lost.
+                <br>
+                The Integrate to model button does not perform the Save operation in the enzymes annotation section.
+                In other words, the enzymes functional annotation can only be saved in the database tables assigned for this purpose using the Save button in the Enzymes board.
 
-            Note that every time the "Integrate to model" button is used the results of the previous integration are lost. This operation saves the new results of the integration on top of the previous ones. Thus, although this button can be used to update the previous integration results, all alterations performed in the model dashboard and database tables designed for this module will be lost.
-
-            The Integrate to model button does not perform the Save operation described in the <a
-                href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section. In other words,
-            the enzymes functional annotation can only be saved in the database tables assigned for this purpose using the Save button in the Enzymes board.
-
-            <br>
-            <br>
-            <img class="tutorialGif" src="static/images/integrate.gif" alt="Integrate enzymes annotation"
-                 id="myImg15" onclick="modalImage('myImg15', 'myModal15', 'img15', 'caption15', 'close15')">
-                <div id="myModal15" class="modal">
-                    <span class="close" id="close15">&times;</span>
-                        <img class="modal-content" id="img15">
-                            <div id="caption15" class="caption"></div>
-                </div>
+                <br>
+                <br>
+                <img class="tutorialGif" src="static/images/integrate.gif" alt="Integrate enzymes annotation"
+                     id="myImg15" onclick="modalImage('myImg15', 'myModal15', 'img15', 'caption15', 'close15')">
+                    <div id="myModal15" class="modal">
+                        <span class="close" id="close15">&times;</span>
+                            <img class="modal-content" id="img15">
+                                <div id="caption15" class="caption"></div>
+                    </div>
 
             <a name="transportersAnnotation"></a>
             <h1>Transporters annotation</h1>
 
+                merlin allows performing and integrating the transporters’ annotation into the draft genome-scale metabolic network, using the state-of-the-art tool Transport Systems Tracker (TranSyT).
+                The TranSyT is a new approach to the problem of identifying genome-wide transmembrane transport systems, annotating these with reactions.
+                TranSyT is the next iteration of TRIAGE (available in merlin v3), though much more efficient and designed to overcome its limitations.
+                This new approach still relies on the TCDB to perform the annotation of transporters systems; however, TranSyT automatically retrieves and processes information from this source.
 
-            <i>merlin</i> easily allows you to perform and integrate the transporters’ annotation into a draft genome-scale metabolic network using the state-of-the-art tool called <i>TranSyT</i>. The Transport Systems Tracker (<i>TranSyT</i>) is a new approach to the problem of identifying
-            genome-wide transmembrane transport systems, annotating these with reactions. <i>TranSyT</i>
-            is the next iteration of <i>TRIAGE</i> (available in <i>merlin</i> v3), though more efficient and designed to overcome its limitations. This new approach still relies on the <i>TCDB</i> to perform the annotation of transporters systems; however, <i>TranSyT</i> automatically retrieves and processes information from this source.
 
             <a name="transyt"></a>
             <h3>Run <i>TranSyT</i></h3>
 
-            <i>TranSyT</i> is available as a plugin in <i>merlin</i>. By executing this operation, <i>merlin</i> will submit a request to <i>TranSyT’s</i> webserver, in order to generate transport reactions for the organism in study. When the results are retrieved, <i>merlin</i> will automatically integrate those reactions in the model and, if the compartmentalization of the model was already processed, assign compartments to the transport reactions.
-            This operation contains some “advanced options” that one can set in order take effect in already compartmentalized models. The fields internal/external/membrane compartment are set as “auto” by default. This means that <i>merlin</i> will try to find the compartments that better suit this localizations. However, if none is found, default compartments will be created for the ones missing. Otherwise, the user can type the name of the compartment to assign to each category, and if these compartments are present in the model, the operation proceeds.
-When the process is complete, all reactions generated can be found in the model’s reaction board main tab at “Transporters pathway”.
+                TranSyT is available as a plugin in merlin.
+                By executing this operation, merlin will submit a request to TranSyT’s webserver, to generate transport reactions for the organism in study.
+                When the results are retrieved, merlin will automatically integrate those reactions in the model and, if the compartmentalization of the model was already processed, assign compartments to the transport reactions.
+                This operation allows setting “advanced options” for previously compartmentalized models.
+                The fields internal/external/membrane compartment are set as “auto” by default.
+                This means that merlin will try to find the compartments that better suit these localizations.
+                However, if none are found, default compartments will be created for the ones missing.
+                Alternatively, the user can type the name of the compartment to assign to each category, and if these compartments are present in the model, the operation proceeds.
+                When the process is complete, all reactions generated can be found in the model’s reaction board main tab at “Transporters pathway”.
 
-            <br>
-            <br>
-            <img class="tutorialGif" src="static/images/transyt.gif"
-                 alt="Transporters annotation with TranSyT"
-                 id="myImg16" onclick="modalImage('myImg16', 'myModal16', 'img16', 'caption16', 'close16')">
-                <div id="myModal16" class="modal">
-                    <span class="close" id="close16">&times;</span>
-                        <img class="modal-content" id="img16">
-                            <div id="caption16" class="caption"></div>
-                </div>
+                <br>
+                <br>
+                <img class="tutorialGif" src="static/images/transyt.gif"
+                     alt="Transporters annotation with TranSyT"
+                     id="myImg16" onclick="modalImage('myImg16', 'myModal16', 'img16', 'caption16', 'close16')">
+                    <div id="myModal16" class="modal">
+                        <span class="close" id="close16">&times;</span>
+                            <img class="modal-content" id="img16">
+                                <div id="caption16" class="caption"></div>
+                    </div>
 
             <a name="cleanTransport"></a>
             <h3>Clean transport reactions</h3>
 
-            Cleaning transport reactions generated by <i>TranSyT</i> can be performed by selecting the operation available at: model - remove - transport reactions. This action will remove all <i>TranSyT’s</i> reactions from the model., which will no longer be available at the reactions board.
-
-
+                Cleaning transport reactions generated by TranSyT can be performed by selecting the operation available at: model - remove - transport reactions.
+                This action will remove all TranSyT’s reactions from the model, which will no longer be available in the reactions board.
 
             <a name="compartmentsAnnotation"></a>
             <h1>Compartments annotation</h1>
