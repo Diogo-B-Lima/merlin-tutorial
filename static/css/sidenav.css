@@ -66,3 +66,15 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.homepage{
+
+}
+
+.homepage img:hover{
+    opacity: 0.5;
+}
+
+.homepage-menu:hover{
+    color: #34495e !important;
+}

@@ -87,6 +87,19 @@
 
     }
 
+    #main .main-text {
+        padding-top: 0;
+        display: inline-block;
+		text-align: justify
+
+    }
+
+    #main .main-text a {
+        text-decoration: none;
+        padding: 0;
+
+    }
+
 
 </style>
 
@@ -247,7 +260,19 @@
 
         <!-- Scrolling header-->
         <div id="scrollDiv" style="background: #008080; max-width: 100%; padding: 20px">
-            <span style="font-size:30px;cursor:pointer;;color:white" onclick="openNav()">&#9776;&nbsp;<i>merlin</i> v4 Tutorial</span>
+            <div style="display: flex">
+                <div style="flex: 5%">
+                    <span class="homepage-menu" style="font-size:30px; cursor:pointer; color:white; display: block; margin-left: auto; margin-right: auto" onclick="openNav()">&#9776;</span>
+                </div>
+                <div style="flex: 90%">
+                    <span style="font-size:30px; color:white; display: block; margin-left: auto; margin-right: auto"><i>merlin</i> v4 Tutorial</span>
+                </div>
+                <div class="homepage" style="flex: 5%">
+                    <a style="display: block; margin-left: auto;" href="https://merlin-sysbio.org/">
+                        <img style="display: block; margin-left: auto; margin-right: auto;" src="static/images/home_icon.png" width="40" height="40">
+                    </a>
+                </div>
+            </div>
             <p style="font-size: 12px; color: white">by
                 <a href="https://www.ceb.uminho.pt/People/Profile/diogolima">Diogo Lima</a>,
                 <a href="https://www.ceb.uminho.pt/People/Profile/davidelagoa">Davide Lagoa</a>,
@@ -308,20 +333,22 @@
                 <h3>Recommendations</h3>
                     Before you start we suggest the following optional procedures to enhance the reconstruction of
             Genome-Scale Metabolic Models using <i>merlin</i>:
-                    <ul style="background:none">
-                        <li><b><i>BLAST</i>+ -</b> Consider installing NCBI's standalone <i>BLAST</i>+ tool. This tool can be used
-                            for hastening the <i>GPR</i>s procedure. Follow the instructions: <a
-                                href="https://www.ncbi.nlm.nih.gov/books/NBK52637/" target="_blank"
-                                style="padding: 0; margin: 0">Windows</a>; <a
-                                href="https://www.ncbi.nlm.nih.gov/books/NBK52640/" target="_blank"
-                                style="padding: 0; margin: 0">Unix</a>; <a
-                                href="https://www.ncbi.nlm.nih.gov/books/NBK279671/" target="_blank" style="padding:
-                                0; margin: 0">Others</a>;</li>
-                        <li><b>Memory -</b> Consider increasing
-                            the maximum heap memory size (RAM) for large genome sequences or multiple
-                            reconstructions. See <a href="tutorialMainPage.html#increaseMemory">Increase maximum heap
-                                memory size</a> for more details.</li>
-                    </ul>
+
+                        <ul style="background:none">
+                            <li><b><i>BLAST</i>+ -</b> Consider installing NCBI's standalone <i>BLAST</i>+ tool. This tool can be used
+                                for hastening the <i>GPR</i>s procedure. Follow the instructions: <div class="main-text"><a
+                                    href="https://www.ncbi.nlm.nih.gov/books/NBK52637/" target="_blank"
+                                    style="padding: 0; margin: 0">Windows</a></div>; <div class="main-text"><a
+                                    href="https://www.ncbi.nlm.nih.gov/books/NBK52640/" target="_blank"
+                                    style="padding: 0; margin: 0">Unix</a></div>; <div class="main-text"><a
+                                    href="https://www.ncbi.nlm.nih.gov/books/NBK279671/" target="_blank" style="padding:
+                                    0; margin: 0">Others</a></div>;</li>
+                            <li><b>Memory -</b> Consider increasing
+                                the maximum heap memory size (RAM) for large genome sequences or multiple
+                                reconstructions. See <div class="main-text"><a href="tutorialMainPage.html#increaseMemory">Increase maximum heap
+                                    memory size</a></div> for more details.</li>
+                        </ul>
+
 
                 <a name="openMerlin"></a>
                 <h3>Open <i>merlin</i></h3>
@@ -577,7 +604,7 @@
                 This operation will load the metabolic information including compounds, enzymes, reactions and pathways into <i>merlin</i>’s internal database.
                 Currently, <i>merlin</i> only supports <i>KEGG</i>.
                 However, in the near future, tools to retrieve data from <i>BiGG</i> and <i>ModelSEED</i> databases will be available
-                (see <a href="https://merlin-sysbio.org/" target="_blank">ongoing work</a> for further information).
+            (see <div class="main-text"> <a href="https://merlin-sysbio.org/" target="_blank">ongoing work</a> </div> for further information).
                 This operation automatically integrates all retrieved spontaneous reactions into the model, which will be complemented upon integrating the enzymatic and transporters annotation.
 
                 <br>
@@ -597,7 +624,7 @@
                 This coincides with the first step towards the reconstruction of your <i>GSM</i> model.
                 There are several options for performing the genome functional annotation with <i>merlin</i> involving homology or domain searches to the genome sequence of the organism of interest.
                 Nevertheless, external genome functional annotations might be uploaded into <i>merlin</i>
-                (see <a href="tutorialMainPage.html#loadGFA">Load genome functional annotation</a> section).
+                (see <div class="main-text"> <a href="tutorialMainPage.html#loadGFA">Load genome functional annotation</a> </div> section).
 
                 The purpose of the enzymes annotation, is to assign metabolic functions, namely the gene products and enzyme commission (<i>EC</i>) numbers, to all coding sequence (<i>CDS</i>) encoding enzymes in the genome.
 
@@ -608,7 +635,7 @@
                 	In <i>merlin</i>, the enzymes functional annotation procedure is supported by semi-automatic similarity searches to remote databases, such as <i>UniProtKB</i> or <i>UniProtKB/SwissProt</i>, to find homologous protein sequences.
 
                     Performing an homology search in <i>merlin</i> requires having imported the genome files
-                    (see <a href="tutorialMainPage.html#genomeFiles">Genome Files</a> section).
+                    (see <div class="main-text"> <a href="tutorialMainPage.html#genomeFiles">Genome Files</a> </div> section).
 
            <h4><i>BLAST</i></h4>
 
@@ -632,7 +659,7 @@
                 </ul>
 
             <i>merlin</i> will perform genome-wide sequence alignments automatically and display the results in a compact layout, the <i>enzymes annotation board</i>
-            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            (see <div class="main-text"> <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> </div>).
             This process may take several hours depending on the web-server availability, internet connection and genome size.
 
             <br>
@@ -651,7 +678,7 @@
             This process involves providing the path in the computer for the returned output files , the source and type.
 
             <i>merlin</i> will parse the contents within each <i>BLAST</i> report and load the results into a simplified layout called enzymes board
-            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            (see <div class="main-text"> <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> </div>).
 
             <a name="domain"></a>
             <h3>Domain search</h3>
@@ -662,7 +689,7 @@
             This tool will provide a functional analysis for each protein sequence by classifying them into families and predicting the presence of domains and important sites.
             <i>InterProScan</i> is a time-consuming tool, thus the user must provide both lower and upper thresholds to limit the number of annotated records.
             The results of your <i>InterProScan</i> functional annotation can be checked by clicking the magnifying glass (coloured with a purple background) of each gene entry in the enzymes board
-            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+            (see <div class="main-text"><a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a></div>).
 
             <a name="loadGFA"></a>
             <h3>Load genome functional annotation</h3>
@@ -676,7 +703,7 @@
                 The user must provide the organism identifier (also known as organism code) in <i>KEGG</i>, to load a genome functional annotation from <i>KEGG</i>.
                 For example, <i>eco</i> for <i>Escherichia coli</i> K-12 MG1655.
                 <i>merlin</i> will load automatically the enzymes functional annotation available in <i>KEGG</i> for the selected organism and integrate it into the model dashboard together with the previously loaded metabolic data
-                (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+                (see <div class="main-text"><a href="tutorialMainPage.html#modelCuration">Model curation</a></div> section).
 
 
             <h4><i>GFF3</i></h4>
@@ -684,7 +711,7 @@
             The user must provide the file path and source, to load a genome functional annotation from an external <i>GFF3</i> file.
             Additionally, the <i>EC</i> option checkbox should be selected to allow the integration of metabolic capabilities encoded in the genome (identified by the <i>EC</i> numbers).
             <i>merlin</i> will load the enzymes functional annotation available in the <i>GFF3</i> file and integrate it into the model dashboard together with the previously loaded metabolic data
-            (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+            (see <div class="main-text"><a href="tutorialMainPage.html#modelCuration">Model curation</a></div> section).
 
 
             <h4><i>GenBank</i></h4>
@@ -693,7 +720,7 @@
             <a href="tutorialMainPage.html#genomeFiles">Genome files</a> section.
             Alternatively, to load a genome functional annotation from an external <i>GenBank</i> file, the user must provide the path for the respective file.
             <i>merlin</i> will load the enzymes functional annotation available in the <i>GenBank</i> file and integrate it into the model dashboard together with the previously loaded metabolic data
-            (see <a href="tutorialMainPage.html#modelCuration">Model curation</a> section).
+            (see <div class="main-text"><a href="tutorialMainPage.html#modelCuration">Model curation</a></div> section).
 
 
             <a name="pipelines"></a>
@@ -701,7 +728,7 @@
 
             <i>merlin</i> allows to perform the genome functional annotation following through methodologies.
             Nevertheless, the genome functional annotation can be manually performed in the enzymes board
-            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section).
+            (see <div class="main-text"><a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a></div> section).
 
 
             <h4>Enzymes annotation - Automatic workflow</h4>
@@ -729,7 +756,7 @@
                 The confidence level is expressed in sequential alphabetical order.
                 The default annotation also has a confidence level of “Default”.
                 When the evaluation process is complete, <i>merlin</i> saves the annotation into its internal database and refreshes the Enzymes Annotation board to reveal the results of the process
-                (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a>).
+                (see <div class="main-text"><a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a></div>).
                 The confidence level of each annotation is shown in the column “notes”.
 
 
@@ -759,6 +786,8 @@
             If required, a new sample can be generated using a different size.
             By pressing the button “save”, the current state of the annotation is saved and it can be continued in a different session.
             Thus, next time <i>SamPler</i> is executed, the same sample and manual annotations are loaded to the window.
+            <br>
+            <br>
             During the annotation process, the tool provides a list of <i>EC</i> numbers that can be assigned to each gene.
             If the correct option is not available in the list, the option “other <i>EC</i> number” should be selected.
             Likewise, if a gene is not metabolic, the “empty” option should be selected.
@@ -773,7 +802,7 @@
             Nevertheless, the user may select a different option with  different parameters based on the analysis of the results.
             By pressing the button “apply", the selected parameters are used for the enzymes annotation.
             Then, at the Enzymes Annotation board main tab, the scores are adjusted for the selected α parameter value, all entries above the upper threshold are accepted as correctly annotated, and below the lower threshold all entries are rejected as non-metabolic genes
-            (see <a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a> section).
+            (see <div class="main-text"><a href="tutorialMainPage.html#enzymesBoard">Enzymes board</a></div> section).
             All genes between the upper and lower thresholds must then be manually curated.
             <i>SamPler</i> is published and more details are available at: <a style="padding: 0" href="https://doi.org/10.1186/s12859-019-3038-4">SamPler</a> a novel method for selecting parameters for gene functional annotation routines.
 
@@ -842,19 +871,24 @@
                 <i>merlin</i> allows integrating the enzymes functional annotation into a draft genome-scale metabolic network very easily.
                 The result of the integration between the loaded metabolic data and the enzymes functional annotation will define the topology and connectivity of your genome-scale metabolic network.
                 The metabolic capabilities encoded in the genome previously identified with <i>EC</i> numbers will now be associated to reactions according to the mappings between enzymes (<i>EC</i> numbers) and reactions available in the metabolic data previously loaded into <i>merlin</i>.
+                <br>
+                <br>
                 The following example elucidates what is happening behind the scenes: A given gene has been annotated with the pyruvate formate-lyase <i>EC</i> number (2.3.1.54) in the enzymes annotation step;
                 <i>KEGG</i> metabolic data has been loaded in <i>merlin</i>
-                (see <a href="tutorialMainPage.html#metabolicData">Metabolic data</a> section);
+                (see <div class="main-text"><a href="tutorialMainPage.html#metabolicData">Metabolic data</a></div> section);
                 When this annotation is integrated into the model dashboard, the following metabolic reactions R00212 and R06987 are automatically associated with the referred enzyme and assumed to be present in your genome-scale metabolic model according to the enzymes functional annotation.
                 <i>merlin</i> will perform this operation for all metabolic capabilities (genes assigned with at least one <i>EC</i> number) annotated in the enzymes functional annotation step and according to the loaded metabolic data.
                 More details at: <a style="padding: 0" href="https://doi.org/10.1093/nar/gkv294">Reconstructing genome-scale metabolic models with <i>merlin</i></a>
                 <br>
+                <br>
                 In the Enzymes board, one can perform the integration of the enzymes functional annotation in the model dashboard using the Integrate to model button.
                 This button will directly integrate the results of the enzymes annotation into the model dashboard and fill up the database tables assigned for this module.
+                <br>
                 <br>
                 Note that every time the Integrate to model button is used the results of the previous integration are lost.
                 This operation saves the new results of the integration on top of the previous ones.
                 Thus, although this button can be used to update the previous integration results, all alterations performed in the model dashboard and database tables designed for this module will be lost.
+                <br>
                 <br>
                 The Integrate to model button does not perform the Save operation in the enzymes annotation section.
                 In other words, the enzymes functional annotation can only be saved in the database tables assigned for this purpose using the Save button in the Enzymes board.
@@ -954,6 +988,8 @@
                 In this table, the user can select which compartments should be ignored by the compartmentalization operation.
                 This feature is useful in cases in which some of the predicted compartments do not make sense in the organism in study.
                 For instance, for cases in which the predicted compartment is “unknown”, or “chloroplast” for bacteria.
+                <br>
+                <br>
                 Regarding the option to set a default membrane (default membrane when compartmentalizing transport reactions),
                 <i>merlin</i> allows the user to set this property manually or use “auto” mode.
                 In “auto” mode, <i>merlin</i> will automatically search for the compartment related with the plasma membrane.
@@ -985,6 +1021,8 @@
                 The formulation of the biomass reaction is one of the most important steps in your reconstruction.
                 This is also the first step towards the conversion of our genome-scale metabolic network into a model.
                 The biomass reaction should account for all the macromolecules that make up the biomass of the organism of interest.
+                <br>
+                <br>
                 <i>merlin</i> provides the e-biomass equation tool, which allows creating automatically the biomass reaction.
                 This reaction includes DNA, RNA, Protein, Lipid and Carbohydrate macromolecules, as well as the group of cofactors.
                 These metabolites will be denoted as electronic metabolites, namely e-Metabolites.
@@ -1067,14 +1105,14 @@
 
             <ul style="background:none">
 
-                <li>Gene translated amino acid sequences, i.e genome protein fasta file (<i>.faa</i>), for the protein assembly</li>
+                <li>gene translated amino acid sequences, i.e genome protein fasta file (<i>.faa</i>), for the protein assembly</li>
                 <li><i>mRNA</i>, i.e. genomic coding sequences fasta file (<i>.fna</i>) as well as <i>tRNA</i> and <i>rRNA</i>, i.e. <i>RNA</i> sequences fasta file (<i>.fna</i>), sequences for the <i>RNA</i> assembly</li>
-                <li>Gene nucleotide sequences, i.e. genome sequence fasta file (<i>.fna</i>), for the <i>DNA</i> assembly</li>
+                <li>gene nucleotide sequences, i.e. genome sequence fasta file (<i>.fna</i>), for the <i>DNA</i> assembly</li>
             </ul><br>
 
             Additionally, gene expression data can be used to adjust the amino acids contents. All cofactors in the e-Cofactor reaction are assigned with the same content.
-            Note that, all reactions can be manually edited in the Reactions board (see below the
-                <a href="tutorialMainPage.html#modelCuration">Model curation</a>
+            Note that, all reactions can be manually edited in the Reactions board
+            (see below the <div class="main-text"><a href="tutorialMainPage.html#modelCuration">Model curation</a></div>
             section). Furthermore, new reactions can be created for the assembly of other macromolecules in the Reactions board.
             For instance, the growth-associated energy requirements characterized by the number of ATP molecules required for
             synthesizing one gram of biomass can be added to the biomass as the hydrolysis of the energy currency of life.
@@ -1107,7 +1145,7 @@
             For that, the user must have manually or automatically retrieved and uploaded  all genome files, namely  the protein fasta file (<i>.faa</i>),
             the genomic coding sequences fasta file (<i>.fna</i>), the RNA sequences fasta file (<i>.fna</i>) and the genome sequence fasta file (<i>.fna</i>).
             See
-                <a href="tutorialMainPage.html#genomeFiles">Genome files</a>
+                <div class="main-text"><a href="tutorialMainPage.html#genomeFiles">Genome files</a></div>
             section for more detail.
             Leave the calculate protein, DNA and RNA checkboxes ticked for <i>merlin</i> to determine these contents automatically
 
@@ -1145,6 +1183,8 @@
             The user may manually insert the compartment for drain creation, if intended, or leave <i>merlin’s</i> default compartment, which is defined as ‘auto’.
             If the latter is chosen, the software will automatically search for an ‘extracellular’ or
             ‘outside’ compartment in the model and generate drain reactions for all metabolites in the compartment.
+            <br>
+            <br>
             All drains generated by <i>merlin</i> are grouped into a pathway named ‘Drains Pathway’.
             Additionally, these reactions contain a single compound as a reactant, no products and its lower and upper bounds are set at a value of 0 and 999999 (default), respectively.
             These restrictions limit the input and output fluxes of a metabolite and should be constrained according to the environmental condition.
@@ -1177,6 +1217,8 @@
                 The genes associated with each ortholog are evaluated and a similarity search against the whole genome is performed with previously defined similarity thresholds.
                 The similarity thresholds for both reference organism and other organism can be defined in the method ”gpr rules” inside “tools configuration” in the section “settings”.
                 These values allow the algorithm to select the genes that should be selected after the similarity search.
+                <br>
+                <br>
                 The enzymes are connected to their orthologues through one or more modules which have a specific definition,
                 comprising different orthologues, depending on the reaction they are associated with.
                 The definition is used to generate the boolean rules using the similarity search results to accept or reject a definition.
@@ -1218,6 +1260,8 @@
                 The “search” field eases gene filtering by name or locus tag,
                 highlighting the matched gene (the arrows and indexes on the rightmost position allow cycling between multiple matches).
                 In addition, it is possible to filter the genes shown in the board by encoding genes only.
+                <br>
+                <br>
                 The “insert” option triggers a new window which allows users to create a new gene entry,
                 while the “edit” option triggers an operation to modify existing genes.
                 The “remove” option removes a given gene both from the board and from the database.
@@ -1244,6 +1288,8 @@
                 When the magnifying glass is clicked, it is possible to visualize additional information such as the encoded reactions,
                 encoding genes, Gene-Protein-Reaction rules (if available), associated pathways, protein synonyms and associated compartments.
                 The search field allows users to filter data by protein name or identifier.
+                <br>
+                <br>
                 The “insert” and “edit” operations allow creating new proteins and editing existing proteins, respectively.
                 The “remove” operation removes a protein both from the board and the database.
                 In addition, It is possible to filter proteins by the ones available “in model” proteins, which are proteins encoded in the genome.
@@ -1268,6 +1314,8 @@
                 By clicking on the magnifying glass associated with a given metabolite,
                 it is possible to visualize additional information such as reactions in which it is involved , synonyms and entry type.
                 The search field allows users to seek metabolites by name, formula and external identifier.
+                <br>
+                <br>
                 The “insert”, “edit” and “remove” operations are responsible for creating new, editing existing and removing metabolites, respectively.
                 Additionally, it is possible to filter the “metabolites” board by reactants, highlighting the entries in green, and by products, highlighting the entries in blue.
                 All other entries are simultaneously reactants and products. As the “proteins” board , it is possible to filter the “metabolites” board by metabolites integrated in the model.
@@ -1304,14 +1352,24 @@
                 The search field allows users to filter reactions by reaction identifier and equation.
                 Additionally, it is possible to filter the set of shown reactions by pathway. Furthermore, after selecting a specific pathway,
                 by clicking in the “draw in browser” option it is possible to access an external webpage from <i>KEGG</i>, using the default browser, with a visual representation of the pathway as represented in <i>merlin</i>.
+                <br>
+                <br>
                 The “insert”, “edit” and “remove” operations are responsible for creating new reactions,
                 modifying pre existing reactions, and removing a reaction respectively.
+                <br>
+                <br>
                 The “find gene” button triggers an operation to find an orthologous gene for a given reaction.
+                <br>
+                <br>
                 The “duplicate” button creates a copy of a chosen reaction, with the only change being the incremented reaction identifier (to distinguish copies from the original reaction).
                 The pathway subsection contains the “new” and “remove” buttons, which trigger operations to create a new pathway or remove an existing one.
+                <br>
+                <br>
                 All reactions listed in the “reactions” board are color coded by pathway, thus every reaction belonging to the same pathway has the same color.
                 The “colors” button automatically refreshes the color palette of the “reactions” board.
                 The “export file” button generates a <i>XLSX</i> file with all reactions data, which can be further filtered by pathway.
+                <br>
+                <br>
                 Finally, it is possible to filter the “reactions” board to list only reactions integrated in the model.
                 This board contains an additional statistics tab describing data, such as the number of reactions in the model filtered by source and number of reversible and irreversible reactions.
 
@@ -1361,9 +1419,9 @@
                 The typical unbalanced reaction issues found within a metabolic network include:<br>
 
                 <ul style="background:none">
-                    <li>Metabolite missing formulae</li>
-                    <li>Missing/excess protons or water</li>
-                    <li>Macromolecule synthesis/breakdown</li>
+                    <li>metabolite missing formulae</li>
+                    <li>missing/excess protons or water</li>
+                    <li>macromolecule synthesis/breakdown</li>
                 </ul>
 
                 Usually, the first and second cases are easily solvable by determining the missing formulae and adding/removing protons/water,
@@ -1460,6 +1518,8 @@
                 Then, you can take a look at the reactions associated with each metabolite by opening a new panel on the magnifying glass.
                 In this panel, the evaluation result depends on whether the reaction can carry any flux towards the consumption or synthesis of the previous metabolite,
                 depending on the role. The number of reactants and products is also available in this panel.
+                <br>
+                <br>
                 To get more inception about a given reaction, one can open a new panel by clicking on the associated magnifying glass.
                 This panel will display <i>BioISO</i>’s analysis over the metabolites involved in that specific reaction.
                 Finally, you can get more inception on the model state by repeating the last two operations over such metabolites and reactions
@@ -1482,6 +1542,8 @@
                 For that, a straightforward pipeline using <i>BioISO</i> is suggested.
                 Once the user has assembled the draft genome-scale metabolic network, performed the reversibility correction,
                 and resolved both unbalanced and blocked reactions, we suggest  using <i>BioISO</i> to hasten the model curation and debugging.
+                <br>
+                <br>
                 To run <i>BioISO</i>  an objective reaction must be provided.
                 For instance, the main objective of microorganisms living in wild-type environmental conditions is to grow namely maximizing the biomass production.
                 Following this principle, the first reaction to be submitted to <i>BioISO</i> might be the biomass reaction.
@@ -1489,6 +1551,8 @@
                 In addition to this preliminary analysis, <i>BioISO</i> will conduct its analysis to the reactions associated with these precursor metabolites and so on and so forth.
                 In this way, one can solve potential errors in the draft genome-scale metabolic model by focussing specifically in modules that cannot carry any flux towards the objective.
                 Note that such modules are just a given set of metabolites and reactions that cannot carry flux.
+                <br>
+                <br>
                 The manual curation process is therefore leveraged with this pipeline, as  every reaction can be submitted as objective.
                 This allows  evaluating whether a given pathway can synthesize or consume a given metabolite,by analysing the reactions present in such via.
                 The faulty modules (reactions or metabolites), according to <i>BioISO</i> results, should be thoroughly  assessed.
